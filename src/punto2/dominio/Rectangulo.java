@@ -22,8 +22,8 @@ public class Rectangulo {
         this.altura = altura;
     }
     
-    public double obtenerOtrosPuntos(){
-    return -1;
+   public void obtenerPuntosDelRectangulo(){
+       
     }
     public double obtenerPerimetroRectangulo(){
     
@@ -32,6 +32,8 @@ public class Rectangulo {
     public double obtenerSuperficieRectangulo(){
         return base*altura;
     }
+    
+    
 
     public int getX() {
         return x;

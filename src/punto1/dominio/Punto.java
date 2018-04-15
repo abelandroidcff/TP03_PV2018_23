@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dominio.punto1;
+package punto1.dominio;
 
 /**
  *
@@ -19,6 +19,11 @@ public class Punto {
     this.x = x;
     this.y = y;
 }
+ 
+ public double calcularDistanciaEntrePuntos(Punto otroPunto){
+    double distancia=Math.round( Math.sqrt(Math.pow(otroPunto.getX(),otroPunto.getX())+ Math.pow(otroPunto.getY(), otroPunto.getY())));
+    return distancia;
+ }   
 
     public int getX() {
         return x;
@@ -35,10 +40,7 @@ public class Punto {
     public void setY(int y) {
         this.y = y;
     }
- public double calcularDistanciaEntrePuntos(Punto otroPunto){
-    double distancia=Math.round( Math.sqrt(Math.pow(otroPunto.getX(),otroPunto.getX())+ Math.pow(otroPunto.getY(), otroPunto.getY())));
-    return distancia;
- }   
+ 
 
 }
 
