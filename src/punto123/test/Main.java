@@ -7,6 +7,7 @@ package punto123.test;
 
 import punto1.dominio.Punto;
 import punto2.dominio.Rectangulo;
+import punto3.dominio.Triangulo;
 
 /**
  *
@@ -31,6 +32,9 @@ public class Main {
         System.out.println("La Superficie es: "+ unRectangulo.obtenerSuperficieRectangulo());
         
         // 03
+        System.out.println("--------------Punto 3----------------------------");
+        Triangulo unTriangulo= new Triangulo(1,1,5);
+        unTriangulo.verificarTriangulo();
     
 }
         
