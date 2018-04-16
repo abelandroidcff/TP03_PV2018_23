@@ -41,15 +41,15 @@ public class Transaccion {
         for (int i = 0; i < cantidad; i++) {
             if (i == 0) {
                 precioCuotaInteres = precioCuota;
-                System.out.println("Cuota " + (i + 1) + ": " + df.format(precioCuotaInteres));
+                System.out.println("Cuota N°" + (i + 1) + ": " + df.format(precioCuotaInteres));
             } else {
                 precioCuotaInteres = precioCuota + (precioCuota * interes);
-                System.out.println("Cuota " + (i + 1) + ": " + df.format(precioCuotaInteres));
+                System.out.println("Cuota N°" + (i + 1) + ": " + df.format(precioCuotaInteres));
                 interes += 0.015;
             }
             precioTotal += precioCuotaInteres;
         }
-        System.out.println("TOTAL: " + df.format(precioTotal));
+        System.out.println("TOTAL: $" + df.format(precioTotal));
     }
 
     public void mostrarListadoVentas() {
@@ -59,7 +59,7 @@ public class Transaccion {
             System.out.println("\nPRODUCTO 0" + (i + 1) + "\nCodigo: " + listado[i].producto.getCodigo()
                     + "\nNombre: " + listado[i].producto.getNombre()
                     + "\nPrecio: $" + df.format(listado[i].producto.getPrecioUnitario())
-                    + "\nCuotas: " + listado[i].cuota);
+                    + "\nCant.Cuotas: " + listado[i].cuota);
             mostrarPlanDeCuotas(listado[i].getProducto().getPrecioUnitario(), listado[i].cuota);
         }
     }
