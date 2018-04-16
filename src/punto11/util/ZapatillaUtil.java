@@ -12,6 +12,9 @@ public class ZapatillaUtil {
     public ZapatillaUtil() {
     }
 
+    /**
+     * Metodo que carga datos de zapatillas por consola.
+     */
     public void cargarZapatillas() {
         Scanner scn = new Scanner(System.in);
         listaZapatillas = new ArrayList<>();
@@ -27,6 +30,10 @@ public class ZapatillaUtil {
         }
     }
 
+    /**
+     * Metodo que verifica la autenticidad de los datos ingresados en el metodo
+     * cargarZapatillas().
+     */
     public void compararMarcas() {
         listadoZapatillasOficiales = new ArrayList<>();
         listadoZapatillasOficiales.add("adidas");
@@ -49,6 +56,9 @@ public class ZapatillaUtil {
         }
     }
 
+    /**
+     * Muestra una tabla con los resultados de los datos ingresados por consola.
+     */
     public void mostrarTablaVerificada() {
         System.out.println("\n_____________LISTADO_____________");
         System.out.println("NOMBRE\t\tMARCA");

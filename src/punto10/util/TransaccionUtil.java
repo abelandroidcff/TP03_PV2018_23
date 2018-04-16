@@ -9,7 +9,11 @@ public class TransaccionUtil {
 
     private Venta[] listado;
 
-    public void realizarTransaccion() {
+    /**
+     * Metodo que carga los datos de productos a comprar con sus respectivas
+     * cuotas.
+     */
+    public void cargarProductos() {
         int cantidadVenta;
         Scanner scn = new Scanner(System.in);
         System.out.print("Ingrese cantidad de productos a comprar: ");
@@ -32,6 +36,13 @@ public class TransaccionUtil {
         }
     }
 
+    /**
+     * Metodo que gestiona y muestra los detalles de las cuotas elegidas por el
+     * usuario.
+     *
+     * @param precio
+     * @param cantidad
+     */
     public void mostrarPlanDeCuotas(double precio, int cantidad) {
         DecimalFormat df = new DecimalFormat("0.00");
         double precioCuota = precio / cantidad;
@@ -52,6 +63,10 @@ public class TransaccionUtil {
         System.out.println("TOTAL: $" + df.format(precioTotal));
     }
 
+    /**
+     * Metodo que detalla el resumen de todas las compras realizadas por el
+     * usuario.
+     */
     public void mostrarListadoVentas() {
         DecimalFormat df = new DecimalFormat("0.00");
         System.out.println("\n______________RESUMEN______________");
