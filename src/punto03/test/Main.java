@@ -19,7 +19,12 @@ public class Main {
     public static void main(String[] args) {
         // 03
         System.out.println("--------------Punto 3----------------------------");
+        //Se crea un objeto de la clase triangulo y se envia los datos por parametros
         Triangulo unTriangulo= new Triangulo(1,1,5);
+        //Metodo que verifica si se introduzco valores para formar un triangulo
         unTriangulo.verificarTriangulo();
+        //Se obtiene el perimetro del triangulo ingresado
+        System.out.println("El perimetro del triangulo es: "+ unTriangulo.obtenerPerimetroTriangulo());
+        
     }
 }
