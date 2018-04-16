@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package punto12.test;
 
-/**
- *
- * @author Bruno Estrada
- */
+import punto12.util.Busqueda;
+
 public class Main {
-    
+
+    public static void main(String[] args) {
+        Busqueda busq = new Busqueda();
+        busq.mostrarCategorias();
+        busq.realizarBusqueda();
+    }
 }

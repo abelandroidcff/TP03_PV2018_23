@@ -1,10 +1,10 @@
 package punto10.test;
 
-import punto10.util.Transaccion;
+import punto10.util.TransaccionUtil;
 
 public class Main {
     public static void main(String[] args) {
-        Transaccion transaccion = new Transaccion();
+        TransaccionUtil transaccion = new TransaccionUtil();
         transaccion.realizarTransaccion();
         transaccion.mostrarListadoVentas();
     }

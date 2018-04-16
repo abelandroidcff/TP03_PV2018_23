@@ -1,14 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package punto11.dominio;
 
-/**
- *
- * @author Bruno Estrada
- */
 public class Zapatilla {
-    
+
+    private String marca;
+    private boolean calidad;
+
+    public Zapatilla() {
+    }
+
+    public Zapatilla(String marca, boolean calidad) {
+        this.marca = marca;
+        this.calidad = calidad;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public boolean isCalidad() {
+        return calidad;
+    }
+
+    public void setCalidad(boolean calidad) {
+        this.calidad = calidad;
+    }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import punto10.dominio.Producto;
 import punto10.dominio.Venta;
 
-public class Transaccion {
+public class TransaccionUtil {
 
     private Venta[] listado;
 

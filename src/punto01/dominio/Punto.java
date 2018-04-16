@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package punto1.dominio;
+package punto01.dominio;
 
 /**
  *
