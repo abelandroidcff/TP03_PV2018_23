@@ -7,7 +7,6 @@ import punto05.dominio.Circulo;
 public class CirculoUtil {
 
     Scanner scanner = new Scanner(System.in);
-    /*private ArrayList<Circulo> listaCirculos;*/
 
     private ArrayList<Circulo> listaCirculos = new ArrayList();
 
@@ -21,7 +20,7 @@ public class CirculoUtil {
     public void setListaCirculos(ArrayList<Circulo> listaCirculos) {
         this.listaCirculos = listaCirculos;
     }
-
+/*Metodo para agregar elementos al array de circulos*/
     public void registrarCirculos() {
         Circulo circulo = new Circulo();
         System.out.print("Ingrese Coordenada x del Circulo: ");
@@ -36,6 +35,7 @@ public class CirculoUtil {
         listaCirculos.add(circulo);
     }
 
+    /*Metodo para visualizar los elementos agregados al arraylist de circulos*/
     public void mostrarCirculos() {
         System.out.println("              CIRCULOS             ");
         System.out.println("----------------------------------------------");
@@ -43,7 +43,6 @@ public class CirculoUtil {
 
         for (int i = 0; i < listaCirculos.size(); i++) {
             double auxiliarSuperficie = listaCirculos.get(i).obtenerSuperficie();
-            /* System.out.println("("+listaCirculos.get(i).getX()+","+ listaCirculos.get(i).getY())+")"+"    "+listaCirculos.get(i).getRadio()+"    " + auxiliarSuperficie);*/
             System.out.println("(" + listaCirculos.get(i).getX() + "," + listaCirculos.get(i).getY() + ")" + ")" + "            " + listaCirculos.get(i).getRadio() + "           " + auxiliarSuperficie);
         }
         System.out.println("");
