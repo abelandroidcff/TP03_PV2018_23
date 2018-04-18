@@ -1,21 +1,22 @@
 package punto12.util;
 
 import java.util.ArrayList;
+import java.util.List;
 import punto12.dominio.Libro;
 
 public class LibroUtil {
 
-    private ArrayList<Libro> arrayLibros;
+    private List<Libro> arrayLibros;
 
     public LibroUtil() {
         arrayLibros = new ArrayList<>();
     }
 
-    public ArrayList<Libro> getArrayLibros() {
+    public List<Libro> getArrayLibros() {
         arrayLibros.add(new Libro("Matematicas Discretas", "matematicas", "Grimaldi"));
         arrayLibros.add(new Libro("Introduccion a Bases de Datos", "informatica", "Christopher Date"));
         arrayLibros.add(new Libro("El Reino del Reves", "cuentos", "Maria Elena Walsh"));
-        arrayLibros.add(new Libro("Lengua I", "lengua", "Antonio Lepsz"));
+        arrayLibros.add(new Libro("Lengua I", "lengua", "Antonio Lepz"));
         arrayLibros.add(new Libro("Matematicas para la computacion", "matematicas", "Murillo"));
         arrayLibros.add(new Libro("Tom Sawyer", "novelas", "Mark Twain"));
         arrayLibros.add(new Libro("Lluvia de estrellas", "novelas", "Martina Wildner"));
@@ -28,7 +29,7 @@ public class LibroUtil {
         return arrayLibros;
     }
 
-    public void setArrayLibros(ArrayList<Libro> arrayLibros) {
+    public void setArrayLibros(List<Libro> arrayLibros) {
         this.arrayLibros = arrayLibros;
     }
 }

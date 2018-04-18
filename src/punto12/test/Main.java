@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Busqueda busq = new Busqueda();
-        busq.mostrarCategorias();
+        busq.mostrarInformacionLibros();
         busq.realizarBusqueda();
     }
 }

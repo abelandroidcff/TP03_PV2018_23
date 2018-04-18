@@ -1,15 +1,18 @@
 package punto11.util;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import punto11.dominio.Zapatilla;
 
 public class ZapatillaUtil {
 
-    private ArrayList<String> listadoZapatillasOficiales;
-    private ArrayList<Zapatilla> listaZapatillas;
+    private List<String> listadoZapatillasOficiales;
+    private List<Zapatilla> listaZapatillas;
 
     public ZapatillaUtil() {
+        listadoZapatillasOficiales = new ArrayList<>();
+        listaZapatillas = new ArrayList<>();
     }
 
     /**
@@ -17,7 +20,6 @@ public class ZapatillaUtil {
      */
     public void cargarZapatillas() {
         Scanner scn = new Scanner(System.in);
-        listaZapatillas = new ArrayList<>();
         System.out.print("Ingrese cantidad de zapatillas a cargar: ");
         int cantidad = scn.nextInt();
         for (int i = 0; i < cantidad; i++) {
@@ -35,7 +37,6 @@ public class ZapatillaUtil {
      * cargarZapatillas().
      */
     public void compararMarcas() {
-        listadoZapatillasOficiales = new ArrayList<>();
         listadoZapatillasOficiales.add("adidas");
         listadoZapatillasOficiales.add("nike");
         listadoZapatillasOficiales.add("reebok");
@@ -73,19 +74,19 @@ public class ZapatillaUtil {
         }
     }
 
-    public ArrayList<String> getListadoZapatillasOficiales() {
+    public List<String> getListadoZapatillasOficiales() {
         return listadoZapatillasOficiales;
     }
 
-    public void setListadoZapatillasOficiales(ArrayList<String> listadoZapatillasOficiales) {
+    public void setListadoZapatillasOficiales(List<String> listadoZapatillasOficiales) {
         this.listadoZapatillasOficiales = listadoZapatillasOficiales;
     }
 
-    public ArrayList<Zapatilla> getListaZapatillas() {
+    public List<Zapatilla> getListaZapatillas() {
         return listaZapatillas;
     }
 
-    public void setListaZapatillas(ArrayList<Zapatilla> listaZapatillas) {
+    public void setListaZapatillas(List<Zapatilla> listaZapatillas) {
         this.listaZapatillas = listaZapatillas;
     }
 }
