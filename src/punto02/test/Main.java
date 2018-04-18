@@ -22,5 +22,9 @@ public class Main {
         Rectangulo unRectangulo = new Rectangulo(1, 3, 6, 4);
         System.out.println("El perimetro es: " + unRectangulo.obtenerPerimetroRectangulo());
         System.out.println("La Superficie es: " + unRectangulo.obtenerSuperficieRectangulo());
+        System.out.println("La Posicion del Vertice(1) ingresado es: " + "("+unRectangulo.getX()+","+ unRectangulo.getY()+")");
+        System.out.println("La Posicion del Vertice(2) es: " + "("+unRectangulo.verticeDosX()+","+ unRectangulo.verticeDosY()+")");
+        System.out.println("La Posicion del Vertice(3) es: " + "("+unRectangulo.verticeTresX()+","+ unRectangulo.verticeTresY()+")");
+        System.out.println("La Posicion del Vertice(4) es: " + "("+unRectangulo.verticeCuatroX()+","+ unRectangulo.verticeCuatroY()+")");
     }
 }

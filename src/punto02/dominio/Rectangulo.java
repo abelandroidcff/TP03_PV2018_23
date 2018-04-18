@@ -10,32 +10,33 @@ package punto02.dominio;
  * @author abel
  */
 public class Rectangulo {
-    private int x;
-    private int y;
-    private int base;
-    private int altura;
 
-    public Rectangulo(int x, int y, int base, int altura) {
+    private double x;
+    private double y;
+    private double base;
+    private double altura;
+
+    public Rectangulo(double x, double y, double base, double altura) {
         this.x = x;
         this.y = y;
         this.base = base;
         this.altura = altura;
     }
-    
-   public void obtenerPuntosDelRectangulo(){
-       
-    }
-    public double obtenerPerimetroRectangulo(){
-    
-        return 2*base + 2* altura;
-    }
-    public double obtenerSuperficieRectangulo(){
-        return base*altura;
-    }
-    
-    
 
-    public int getX() {
+    public void obtenerPuntosDelRectangulo() {
+
+    }
+
+    public double obtenerPerimetroRectangulo() {
+
+        return 2 * base + 2 * altura;
+    }
+
+    public double obtenerSuperficieRectangulo() {
+        return base * altura;
+    }
+
+    public double getX() {
         return x;
     }
 
@@ -43,7 +44,7 @@ public class Rectangulo {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -51,7 +52,7 @@ public class Rectangulo {
         this.y = y;
     }
 
-    public int getBase() {
+    public double getBase() {
         return base;
     }
 
@@ -59,13 +60,42 @@ public class Rectangulo {
         this.base = base;
     }
 
-    public int getAltura() {
+    public double getAltura() {
         return altura;
     }
 
     public void setAltura(int altura) {
         this.altura = altura;
     }
-     
-    
+
+    /* Metodos que calculan los tres vertices restantes del Rectangulo*/
+    public double verticeDosX() {
+        return x + base;
+
+    }
+
+    public double verticeDosY() {
+        return y;
+
+    }
+
+    public double verticeTresX() {
+        return x + base;
+
+    }
+
+    public double verticeTresY() {
+        return y + altura;
+
+    }
+
+    public double verticeCuatroX() {
+        return x;
+
+    }
+
+    public double verticeCuatroY() {
+        return y + altura;
+    }
+
 }
